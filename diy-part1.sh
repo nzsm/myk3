@@ -37,7 +37,7 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES 
 #sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
 #sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 sed -i '$a src-git Promix953 https://github.com/Promix953/luci-app-jd-dailybonus' feeds.conf.default
-sed -i '$a src-git AdguardTeam https://github.com/AdguardTeam/AdGuardHome' feeds.conf.default
-sed -i '$a src-git houzi- https://github.com/houzi-/CDN' feeds.conf.default
+#sed -i '$a src-git AdguardTeam https://github.com/AdguardTeam/AdGuardHome' feeds.conf.default
+#sed -i '$a src-git houzi- https://github.com/houzi-/CDN' feeds.conf.default
 sed -i '$a src-git cnzd https://github.com/cnzd/luci-app-koolproxyR' feeds.conf.default
-sed -i '$a src-git fw876 https://github.com/fw876/helloworld' feeds.conf.default
+#sed -i '$a src-git fw876 https://github.com/fw876/helloworld' feeds.conf.default
