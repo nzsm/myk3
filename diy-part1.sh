@@ -36,4 +36,4 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES 
 #sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
 #sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
-sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-jd-dailybonus' feeds.conf.default
+sed -i '$a src-git Promix953 https://github.com/Promix953/luci-app-jd-dailybonus' feeds.conf.default
