@@ -36,4 +36,4 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES 
 #sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
 sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
-git clone https://github.com/kenzok8/openwrt-packages/tree/master/luci-app-passwall
+svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
