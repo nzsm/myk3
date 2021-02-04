@@ -60,7 +60,8 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES 
 #sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
 #sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
 sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
+sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
-svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
-#svn co https://github.com/jerrykuku/luci-app-jd-dailybonus
-##svn co https://github.com/cnzd/luci-app-koolproxyR
+#svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
+sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-jd-dailybonus' feeds.conf.default
+#svn co https://github.com/cnzd/luci-app-koolproxyR
