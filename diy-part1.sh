@@ -53,7 +53,7 @@ sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz
 sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES += phicomm-k3|' target/linux/bcm53xx/image/Makefile
 
 # Uncomment a feed source
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
@@ -71,25 +71,3 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 
 
-echo '添加lwz322的K3屏幕插件'
-rm -rf package/lean/luci-app-k3screenctrl
-git clone https://github.com/lwz322/luci-app-k3screenctrl.git package/lean/luci-app-k3screenctrl
-ls -la package/lean/ |grep luci-app-k3screenctrl
-echo '====================Add k3screen Plug OK!===================='
-
-echo '替换lwz322的K3屏幕驱动'
-rm -rf package/lean/k3screenctrl
-git clone https://github.com/lwz322/k3screenctrl_build.git package/lean/k3screenctrl/
-#sed -i 's/@TARGET_bcm53xx_DEVICE_phicomm-k3 +@KERNEL_DEVMEM //g' package/lean/k3screenctrl/Makefile
-cat package/lean/k3screenctrl/Makefile |grep DEPENDS
-echo '====================Add k3screen Drive OK!===================='
-
-
-echo '替换K3的无线驱动为asus-dhd24'
-wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.asus-dhd24 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-# echo '替换K3的无线驱动为ac86u'
-# wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.ac88u -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-# echo '替换K3的无线驱动为69027'
-# wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.69027 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
-echo '====================Replace k3wireless firmware OK!===================='
-© 2021 GitHub, Inc.
