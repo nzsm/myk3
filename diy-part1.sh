@@ -70,14 +70,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
 
 
-# echo '添加passwall和bypass软件源'
-# sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
-# cat feeds.conf.default
-# echo '====================Add feed source OK!===================='
-
-echo '添加jerrykuku的argon-mod主题'
-rm -rf package/lean/luci-theme-argon  
-git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/lean/luci-theme-argon
 
 echo '添加lwz322的K3屏幕插件'
 rm -rf package/lean/luci-app-k3screenctrl
