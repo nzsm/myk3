@@ -65,7 +65,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # sed -i '$a src-git garypang13 https://github.com/garypang13/openwrt-packages' feeds.conf.default
 
 
-svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
+# svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
 
@@ -92,12 +92,6 @@ git clone https://github.com/lwz322/k3screenctrl_build.git package/lean/k3screen
 cat package/lean/k3screenctrl/Makefile |grep DEPENDS
 echo '====================Add k3screen Drive OK!===================='
 
-# echo '移除bcm53xx中的其他机型'
-# sed -i '421,453d' target/linux/bcm53xx/image/Makefile
-# sed -i '140,412d' target/linux/bcm53xx/image/Makefile
-# sed -i 's/k3screenctrl/luci-app-k3screenctrl/g' target/linux/bcm53xx/image/Makefile
-# cat target/linux/bcm53xx/image/Makefile |grep DEVICE_PACKAGES
-# echo '====================Remove other devices of bcm53xx!===================='
 
 echo '替换K3的无线驱动为asus-dhd24'
 wget -nv https://github.com/Hill-98/phicommk3-firmware/raw/master/brcmfmac4366c-pcie.bin.asus-dhd24 -O package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
