@@ -55,6 +55,9 @@ sed -i 's|^TARGET_|# TARGET_|g; s|# TARGET_DEVICES += phicomm-k3|TARGET_DEVICES 
 # Uncomment a feed source
 # sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
+git clone -b openwrt-21.02 --single-branch https://github.com/immortalwrt/immortalwrt &&  cd immortalwrt
+./scripts/feeds update -a && ./scripts/feeds install -a
+
 # Add a feed source
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
@@ -63,9 +66,6 @@ sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds
 sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git small-5 https://github.com/small-5/luci-app-adblock-plus' feeds.conf.default
 # sed -i '$a src-git garypang13 https://github.com/garypang13/openwrt-packages' feeds.conf.default
-git clone -b openwrt-21.02 --single-branch https://github.com/immortalwrt/immortalwrt &&  cd immortalwrt
-./scripts/feeds update -a && ./scripts/feeds install -a
-
 # svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
