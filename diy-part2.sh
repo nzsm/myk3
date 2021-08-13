@@ -16,3 +16,6 @@ echo >> feeds.conf.default
 echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
 ./scripts/feeds update nas
 ./scripts/feeds install -a -p nas
+
+
+svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
