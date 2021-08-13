@@ -14,8 +14,9 @@
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 echo >> feeds.conf.default
 echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
+echo 'src-git jerrykuku https://github.com/jerrykuku/luci-app-jd-dailybonus.git;master' >> feeds.conf.default
 ./scripts/feeds update nas
 ./scripts/feeds install -a -p nas
-
+it clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 
 svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
