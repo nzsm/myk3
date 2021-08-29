@@ -20,4 +20,4 @@
 # ./scripts/feeds install -a -p nas
 # it clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git
 
-svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
+# svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
