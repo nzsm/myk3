@@ -64,8 +64,8 @@ sed -i "s/OpenWrt /nzsm build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g"
 # sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small-5 https://github.com/small-5/luci-app-adblock-plus' feeds.conf.default
+# sed -i '$a src-git small-5 https://github.com/small-5/luci-app-adblock-plus' feeds.conf.default
 # sed -i '$a src-git garypang13 https://github.com/garypang13/openwrt-packages' feeds.conf.default
-# svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
+svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
