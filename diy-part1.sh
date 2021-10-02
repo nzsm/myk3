@@ -69,4 +69,4 @@ sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feed
 # svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
-git clone https://github.com/small-5/luci-app-adblock-plus
+# git clone https://github.com/small-5/luci-app-adblock-plus
