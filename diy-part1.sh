@@ -70,3 +70,4 @@ sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feed
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
 # git clone https://github.com/small-5/luci-app-adblock-plus
+sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
