@@ -23,4 +23,4 @@
 # svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus  0000000
 # svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-adblock-plus package/luci-app-adblock-plus
 
-svn co https://github.com/small-5/Openwrt-Compile/branches/master/Small_5/package/ipk/luci-app-adblock-plus package/luci-app-adblock-plus
+svn co https://github.com/small-5/Openwrt-Compile/branches/master/Small_5/package/ipk/luci-app-adblock-plus
