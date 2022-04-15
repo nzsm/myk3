@@ -62,7 +62,7 @@ sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generat
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 # sed -i '$a src-git hwfuture https://github.com/hongweifuture/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git pwdep https://github.com/hongweifuture/pwdep.git' feeds.conf.default
-# sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
+sed -i '$a src-git 281677160 https://github.com/281677160/openwrt-package' feeds.conf.default
 sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # sed -i '$a src-git liuran001_packages https://github.com/liuran001/openwrt-packages' feeds.conf.default
 # sed -i '$a src-git small_5 https://github.com/small-5/luci-app-adblock-plus' feeds.conf.default
@@ -71,5 +71,5 @@ sed -i '$a src-git xiaorouji https://github.com/xiaorouji/openwrt-passwall' feed
 # svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/luci-app-passwall
 # svn co https://github.com/kenzok8/openwrt-packages/branches/luci-app-passwall package/luci-app-passwall
 # git clone https://github.com/small-5/luci-app-adblock-plus
-sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
+# sed -i '$a src-git kiddin9 https://github.com/kiddin9/openwrt-packages' feeds.conf.default
 
