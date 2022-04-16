@@ -17,8 +17,7 @@
 
 # 单独拉取特定的插件或者文件，比如单独拉取插件包的luci-app-clash
 
-# 
-https://github.com/281677160/openwrt-package/trunk/luci-app-clash package/luci-app-clash
+# https://github.com/281677160/openwrt-package/trunk/luci-app-clash package/luci-app-clash
 # 这个关系就跟上面差不多了，就不多说了，重点要说的是这个链接是有改变的，怎么改变法呢？整个链接真正的链接看下面的，这个原始链接怎么来呢?比如你在别人的仓库看到某个插件，再点开那个插件的文件夹，然后在浏览器复制完整链接就是了。如果有分支的，你想要分支的插件，就先选择了分支再打开插件文件夹然后在复制链接就可以了。
 
 # https://github.com/281677160/openwrt-package/tree/master/luci-app-clash  <--- 在浏览器上复制出来的真正链接
