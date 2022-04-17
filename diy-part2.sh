@@ -23,6 +23,6 @@
 # svn co https://github.com/small-5/luci-app-adblock-plus package/luci-app-adblock-plus  0000000
 # svn co https://github.com/small-5/Openwrt-Compile/trunk/Small_5/package/ipk/luci-app-adblock-plus package/luci-app-adblock-plus
 
-# svn co https://github.com/small-5/Openwrt-Compile/branches/master/Small_5/package/ipk/luci-app-adblock-plus
+svn co https://github.com/small-5/Openwrt-Compile/branches/master/Small_5/package/ipk/luci-app-adblock-plus
 # svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-passwall  package/luci-app-passwall
 # svn co https://github.com/281677160/openwrt-package/trunk/luci-theme-neobird package/luci-theme-neobird
